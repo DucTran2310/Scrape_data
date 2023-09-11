@@ -4,7 +4,7 @@ const startBrowser = async () => {
   let browser
   try {
     browser = await puppeteer.launch({
-      headless: false, // hiển thị UI để mình tương tác, để là true là chạy ngầm ở dưới ko hiện UI
+      headless: true, // hiển thị UI để mình tương tác, để là true là chạy ngầm ở dưới ko hiện UI
       // Chorme sử dụng multiple layers của sandbox để tránh những nội dung web không đáng tin cậy,
       // nếu tin tưởng content đúng thì set như vậy
       args: ['--disable-setuid-sandbox'],
